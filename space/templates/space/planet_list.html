@@ -1,7 +1,9 @@
 {% extends 'space/base.html' %}
 
 {% block content %}
-    Hello, {{user.username}}
+    <style>
+        h2 {float:left}  
+    </style>
     {% for planet in planets %}
         {% include 'space/planet_detail.html' %}
     {% endfor %}
